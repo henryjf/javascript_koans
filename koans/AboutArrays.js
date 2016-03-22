@@ -4,8 +4,8 @@ describe("About Arrays", function() {
   it("should create arrays", function() {
     var emptyArray = [];
     expect(typeof(emptyArray)).toBe('object'); //A mistake? - http://javascript.crockford.com/remedial.html
-    //TODO above doesn't make sense
-    expect(emptyArray.length).toBe(.};
+    //TODO above didn't
+    expect(emptyArray.length).toBe(0);
 
     var multiTypeArray = [0, 1, "two", function () { return 3; }, {value1: 4, value2: 5}, [6, 7]];
     expect(multiTypeArray[0]).toBe(0);
@@ -13,7 +13,7 @@ describe("About Arrays", function() {
     expect(multiTypeArray[3]()).toBe(3);
     expect(multiTypeArray[4].value1).toBe(4);
     expect(multiTypeArray[4]["value2"]).toBe(5);
-    expect(multiTypeArray[5][0]).toBe(6, 7);
+    expect(multiTypeArray[5][0]).toBe(6);
   });
 
   it("should understand array literals", function () {
@@ -24,16 +24,16 @@ describe("About Arrays", function() {
     expect(array).toEqual([1]);
 
     array[1] = 2;
-    expect(array).toEqual([1, 1]);
+    expect(array).toEqual([1, FILL_ME_IN]);
 
     array.push(3);
-    expect(array).toEqual(2);
+    expect(array).toEqual(FILL_ME_IN);
   });
 
   it("should understand array length", function () {
     var fourNumberArray = [1, 2, 3, 4];
 
-    expect(fourNumberArray.length).toBe(3);
+    expect(fourNumberArray.length).toBe(FILL_ME_IN);
     fourNumberArray.push(5, 6);
     expect(fourNumberArray.length).toBe(FILL_ME_IN);
 
@@ -47,13 +47,13 @@ describe("About Arrays", function() {
   it("should slice arrays", function () {
     var array = ["peanut", "butter", "and", "jelly"];
 
-    expect(array.slice(0, 1)).toEqual(peanut, butter);
-    expect(array.slice(0, 2)).toEqual(peanut, and);
-    expect(array.slice(2, 2)).toEqual(and, and);
-    expect(array.slice(2, 20)).toEqual(and);
-    expect(array.slice(3, 0)).toEqual(jelly, peanut);
-    expect(array.slice(3, 100)).toEqual(jelly);
-    expect(array.slice(5, 1)).toEqual(butter, butter);
+    expect(array.slice(0, 1)).toEqual(FILL_ME_IN);
+    expect(array.slice(0, 2)).toEqual(FILL_ME_IN);
+    expect(array.slice(2, 2)).toEqual(FILL_ME_IN);
+    expect(array.slice(2, 20)).toEqual(FILL_ME_IN);
+    expect(array.slice(3, 0)).toEqual(FILL_ME_IN);
+    expect(array.slice(3, 100)).toEqual(FILL_ME_IN);
+    expect(array.slice(5, 1)).toEqual(FILL_ME_IN);
   });
 
   it("should know array references", function () {
