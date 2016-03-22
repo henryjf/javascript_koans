@@ -50,9 +50,9 @@ describe("About Arrays", function() {
     expect(array.slice(0, 1)).toEqual(peanut, butter);
     expect(array.slice(0, 2)).toEqual(peanut, and);
     expect(array.slice(2, 2)).toEqual(and, and);
-    expect(array.slice(2, 20)).toEqual(and, peanut);
+    expect(array.slice(2, 20)).toEqual(and);
     expect(array.slice(3, 0)).toEqual(jelly, peanut);
-    expect(array.slice(3, 100)).toEqual(FILL_ME_IN);
+    expect(array.slice(3, 100)).toEqual(jelly);
     expect(array.slice(5, 1)).toEqual(butter, butter);
   });
 
