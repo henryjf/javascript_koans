@@ -73,6 +73,7 @@ describe("About Arrays", function() {
     copyOfArray[3] = "changed in copyOfArray";
     expect(array[3]).toBe('three');
   });
+
 //TODO  i don't understand the above 
 
 
@@ -91,10 +92,10 @@ describe("About Arrays", function() {
     var array = [1, 2];
 
     array.unshift(3);
-    expect(array).toEqual(FILL_ME_IN);
+    expect(array).toEqual([3, 1, 2]);
 
     var shiftedValue = array.shift();
-    expect(shiftedValue).toEqual(FILL_ME_IN);
-    expect(array).toEqual(FILL_ME_IN);
+    expect(shiftedValue).toEqual(3);
+    expect(array).toEqual([1 ,2]);
   });
 });
