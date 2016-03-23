@@ -48,9 +48,11 @@ describe("About Higher Order Functions", function () {
 
     _(numbers).forEach(isEven);
 
-    expect(msg).toEqual(FILL_ME_IN);
-    expect(numbers).toEqual(FILL_ME_IN);
+    expect(msg).toEqual('falsetruefalse');
+    expect(numbers).toEqual([1, 2, 3]);
   });
+
+  // TODO Explain
 
   it("should use 'all' to test whether all items pass condition", function () {
     var onlyEven = [2,4,6];
